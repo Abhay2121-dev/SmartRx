@@ -11,20 +11,7 @@ HIPAA-Ready Architecture: Built with healthcare compliance in mind
 Comprehensive Validation: Multi-layer verification system for extracted data
 
 🏗️ Architecture
-┌─────────────────┐
-│   Frontend UI   │
-│  (React/HTML)   │
-└────────┬────────┘
-         │
-    ┌────▼─────┐
-    │  Flask   │
-    │   API    │
-    └────┬─────┘
-         │
-    ┌────▼──────────┐
-    │ Google Gemini │
-    │  1.5 Flash    │
-    └───────────────┘
+
 📋 Prerequisites
 
 Python 3.11+
@@ -33,15 +20,12 @@ Google Cloud Account with Gemini API access
 AWS Account (for deployment)
 
 🚀 Quick Start
-1. Clone the Repository
-bashgit clone https://github.com/yourusername/smartrx.git
-cd smartrx
-2. Environment Setup
+1. Environment Setup
 Create a .env file from the example:
-bashcp .env.example .env
+bashcp .env
 Edit .env and add your API keys:
 envGOOGLE_API_KEY=your_google_api_key_here
-3. Local Development
+2. Local Development
 Using Python Virtual Environment
 bash# Create virtual environment
 python -m venv venv
